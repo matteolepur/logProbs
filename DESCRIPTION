@@ -1,0 +1,22 @@
+Package: logProbs
+Title: Calculates the normalized probabilities given log probabilities
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Matteo",
+           family = "Lepur",
+           role = c("aut", "cre"),
+           email = "matteo.lepur@stat.ubc.ca",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Stat 545 assignment to learn how to develop an R Package. Provides functions to normalize log probabilities.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+Imports: 
+    matrixStats
+VignetteBuilder: knitr

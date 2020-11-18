@@ -1,0 +1,23 @@
+---
+title: "Basic_Usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Basic_Usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(logProbs)
+
+normalize_log_probs(c(-10, -10, -10))
+normalize_log_probs(c(NA, -10, -10, -10), na.rm = TRUE)
+normalize_log_probs(c(-100, -99, -99))
+```
