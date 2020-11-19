@@ -11,10 +11,10 @@ probabilities.
 
 ## Installation
 
-You can install the released version of logProbs from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the released version of logProbs using `devtools` from
+[here](https://github.com/matteolepur/logProbs) with:
 
-    install.packages("logProbs")
+    devtools::install_github("https://github.com/matteolepur/logProbs")
 
 ## Example
 
