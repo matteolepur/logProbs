@@ -29,7 +29,7 @@ This is a basic example which shows you how to solve a common problem:
     normalize_log_probs(c(-100, -99, -99))
     #> [1] 0.1553624 0.4223188 0.4223188
     
-### Explanation of Steps for Assignment
+### Explanations for Exercise 1.1
 
 Steps 
 
