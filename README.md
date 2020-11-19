@@ -11,8 +11,7 @@ probabilities.
 
 ## Installation
 
-You can install the released version of logProbs using `devtools` from
-[here](https://github.com/matteolepur/logProbs) with:
+You can install the released version of logProbs using `devtools` with:
 
     devtools::install_github("https://github.com/matteolepur/logProbs")
 
