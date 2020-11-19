@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of logProbs is to provide basic functionality to deal with log
+The goal of logProbs is to provide basic functionality to deal with unnormalized log
 probabilities.
 
 ## Installation
@@ -47,13 +47,13 @@ Steps
 
 6) use `load_all()` to check the function can be loaded and used properly in R.
 
-7) test `?normalize_log_probs` to ensure that function document is proper.
+7) use `?normalize_log_probs` to test that function documentation is proper.
 
-8) use `use_test('normalize')` to create `tests` folder and `test-normalize_log_probs.R` script.
+8) use `use_test('normalize_log_probs')` to create `tests` folder and `test-normalize_log_probs.R` script.
 
 9) use `check()` to ensure all tests pass.
 
-10) use `use_readme_rmd()` to create a rmd folder to show basic functionality. We used a `.Rmd` file so that we can run code blocks
+10) use `use_readme_rmd()` to create a `.Rmd` folder to show basic functionality. We used a `.Rmd` file so that we can run code blocks.
 
 11) use `build_readme()` to build a standard readme for github
 
