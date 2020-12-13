@@ -1,6 +1,6 @@
 Package: logProbs
 Title: Calculates the normalized probabilities given log probabilities
-Version: 1.1.0
+Version: 1.0.0
 Authors@R: 
     person(given = "Matteo",
            family = "Lepur",
