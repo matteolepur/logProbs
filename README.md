@@ -26,7 +26,7 @@ Please look at the proofs section to get a good understanding of this mathematic
 
 You can install the released version of logProbs using `devtools` with:
 
-    devtools::install_github("matteolepur/logProbs", build_vignettes = TRUE, ref = "1.1.0")
+    devtools::install_github("matteolepur/logProbs", build_vignettes = TRUE, ref = "1.1.1")
 
 ## Example
 
