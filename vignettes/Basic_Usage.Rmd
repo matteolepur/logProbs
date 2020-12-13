@@ -1,8 +1,8 @@
 ---
-title: "Basic_Usage"
+title: "logProbs"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Basic_Usage}
+  %\VignetteIndexEntry{logProbs}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,10 +14,19 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+Here we will show the basic usage of the logProbs package.
+
+```{r setup, error=TRUE}
 library(logProbs)
 
-normalize_log_probs(c(-10, -10, -10))
-normalize_log_probs(c(NA, -10, -10, -10), na.rm = TRUE)
-normalize_log_probs(c(-100, -99, -99))
+normalize_log_probs(c(-10, -10, -10))  # evaluate a standard log probability vector
+normalize_log_probs(c(NA, -10, -10, -10), na.rm = TRUE)  # evaluate a standard log probability vector w/ NA
+normalize_log_probs(c(-1000, -1000, -1000))  # evaluate numerically unstable log probability vector
 ```
+We observe that `normalize_log_probs()` cannot deal with log probabilities with large magnitudes because this will create numerical overflow. Therefore, we need to use the stable version of the function `stable_normalize_log_probs()` as follows:
+
+```{r}
+stable_normalize_log_probs(c(-1000, -1000, -1000))  # evaluate numerically unstable log probability vector
+```
+
+To understand why this works look at the main README.md of the package under the proof section.
