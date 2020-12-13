@@ -40,7 +40,7 @@ This is a basic example which shows you how to solve a common problem:
  
 Ultimately, we need to compute the log normalization constant to normalize the log probabilities, then exponentiate them to obtain a simplex of probabilities. Let x_i be the i log probability and y be the log normalization constant.
 
-![proof](imgs/proof.png)
+![proof](imgs/proof1.png)
 
 Notice that we can control the magnitude of the value we are exponentiating x_i - c by selecting c in the real numberline and therefore avoid numerical overflow. We will select c to be the max x_i to ensure that the largest value we obtain in the summation is 1.
     
