@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-Here we will show the basic usage of the logProbs package.
+Here we will show the basic usage of the `normalize_log_probs()` function in the logProbs package.
 
 ```{r setup, error=TRUE}
 library(logProbs)
@@ -23,10 +23,16 @@ normalize_log_probs(c(-10, -10, -10))  # evaluate a standard log probability vec
 normalize_log_probs(c(NA, -10, -10, -10), na.rm = TRUE)  # evaluate a standard log probability vector w/ NA
 normalize_log_probs(c(-1000, -1000, -1000))  # evaluate numerically unstable log probability vector
 ```
-We observe that `normalize_log_probs()` cannot deal with log probabilities with large magnitudes because this will create numerical overflow. Therefore, we need to use the stable version of the function `stable_normalize_log_probs()` as follows:
+
+We observe that `normalize_log_probs()` cannot deal with log probabilities with large magnitudes because this will create numerical overflow. Therefore, we need to use the stable version of the function `stable_normalize_log_probs()`.
+
+Here we will show the basic usage of `stable_normalize_log_probs()` function.
 
 ```{r}
+
+stable_normalize_log_probs(c(-10, -10, -10))  # evaluate a standard log probability vector
+stable_normalize_log_probs(c(NA, -10, -10, -10), na.rm = TRUE)  # evaluate a standard log probability vector w/ NA
 stable_normalize_log_probs(c(-1000, -1000, -1000))  # evaluate numerically unstable log probability vector
 ```
 
-To understand why this works look at the main README.md of the package under the proof section.
+We observe that the function outputs the correct values for the numerically unstable case as the log probabilities are all equal they should result in the same probabilities. To understand why this works look at the main README.md of the package under the proof section.
