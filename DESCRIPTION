@@ -17,6 +17,5 @@ Suggests:
     testthat,
     knitr,
     rmarkdown
-Imports: 
-    matrixStats
+Imports:
 VignetteBuilder: knitr
