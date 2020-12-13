@@ -18,7 +18,7 @@ It does this through implementing two functions that calculate normalized probab
 
 You can install the released version of logProbs using `devtools` with:
 
-    devtools::install_github("https://github.com/matteolepur/logProbs")
+    devtools::install_github("matteolepur/logProbs", build_vignettes = TRUE, ref = "1.1.0")
 
 ## Example
 
