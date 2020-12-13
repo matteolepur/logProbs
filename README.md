@@ -36,6 +36,17 @@ This is a basic example which shows you how to solve a common problem:
     stable_normalize_log_probs(c(-1000, -1000, -1000))
     #> [1] 0.3333333 0.3333333 0.3333333
  
- ## Proof
+ ## Small Proof
+ 
+Ultimately, we need to compute the log normalization constant to normalize the log probabilities, then exponentiate them to obtain a simplex of probabilities. Let $x_{i}$ be the $i^{th}$ log probability and y be the log normalization constant.
+\begin{align*}
+    y &= \log(\sum_{i=1}^{n}e^{x_i}) \\
+    e^{y} &= \sum_{i=1}^{n}e^{x_i} \\
+    e^{y} &= \sum_{i=1}^{n}e^{c - c}e^{x_i} \\
+    e^{y} &= \sum_{i=1}^{n}e^{c}e^{x_i - c} \\
+    e^{y} &= e^{c}\sum_{i=1}^{n}e^{x_i - c} \\
+    y &= c + \log(\sum_{i=1}^{n}e^{x_i - c})
+\end{align*}
+Notice that we can control the magnitude of the value we are exponentiating $x_{i} - c$ by selecting $c \in \mathbb{R}$ and therefore avoid numerical overflow. We will select $c = \max \{x_{1}, x_{2}, ..., x_{n} \}$ to ensure that the largest value we obtain in the summation is 1.
     
 Look at previous pushes for explanations of Exercise 1.1.
