@@ -14,6 +14,14 @@ It does this through implementing two functions that calculate normalized probab
 
 2) `stable_noramlize_log_probs` (numerically stable version)
 
+## Motivation
+
+The first release of this package (assignment-2b) has a goal of being a simple package that deals with unormalized log probabilities.
+However, I found when using it's function I would get numerical errors occuring when I used `exp()` on large values resulting in numerical overflow!
+I addressed this issue in the latest version of this package (assignment-5b). 
+That is, there is a nice trick where we can shift the log likelihoods to ensure that we don't use `exp()` on large values!
+Please look at the proofs section to get a good understanding of this mathematical trick.
+
 ## Installation
 
 You can install the released version of logProbs using `devtools` with:
