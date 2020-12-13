@@ -10,9 +10,9 @@ The goal of logProbs is to provide basic functionality to deal with unnormalized
 probabilities and illustrate the need for a numerically stable way to calculate the log normalization constant.
 It does this through implementing two functions that calculate normalized probabilities from unormalized log probabilities:
 
-1) a naive and numerically unstable version
+1) `normalize_log_probs` (naive numerically unstable)
 
-2) a smart a numerically stable version
+2) `stable_noramlize_log_probs` (numerically stable version)
 
 ## Installation
 
