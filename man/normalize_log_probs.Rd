@@ -8,7 +8,7 @@ normalize_log_probs(
   log_probs,
   na.rm = FALSE,
   verbose = FALSE,
-  threshhold = 10^(-2)
+  threshhold = 10^(-1)
 )
 }
 \arguments{
