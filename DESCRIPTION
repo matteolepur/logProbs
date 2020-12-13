@@ -17,5 +17,4 @@ Suggests:
     testthat,
     knitr,
     rmarkdown
-Imports:
 VignetteBuilder: knitr
