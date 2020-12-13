@@ -38,7 +38,7 @@ This is a basic example which shows you how to solve a common problem:
  
  ## Small Proof
  
-Ultimately, we need to compute the log normalization constant to normalize the log probabilities, then exponentiate them to obtain a simplex of probabilities. Let x_{i} be the i^{th} log probability and y be the log normalization constant.
+Ultimately, we need to compute the log normalization constant to normalize the log probabilities, then exponentiate them to obtain a simplex of probabilities. Let x_i be the i log probability and y be the log normalization constant.
 
 ![proof](img/proof.png)
 
